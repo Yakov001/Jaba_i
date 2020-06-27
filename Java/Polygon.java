@@ -1,4 +1,7 @@
 import java.util.Scanner;
+/*
+I calculate the area of regular polygon
+ */
 
 public class Polygon {
     public static void main(String[] args)
