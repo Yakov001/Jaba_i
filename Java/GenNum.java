@@ -1,8 +1,8 @@
 import java.util.Scanner;
 public class GenNum {
     public static void main(String[] args){
-        double pi = Math.PI;
-        double e = Math.E;
-        System.out.printf("Pi is %.5f and E is %.5f %n", pi, e);
+        double pi = 100000000.123456;
+        long e = 1000000000;
+        System.out.printf("Pi is %,d and E is %,.2f %n", e, pi);
     }
 }
