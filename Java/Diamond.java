@@ -11,16 +11,16 @@ public class Diamond {
     public static String onestr(int i, int n){
         int j;
         String x = "";
-        if( i<= n/2){
-            for( j =1; j<=n/2; j++ ){
-                if( j < (n/2 - i+1)){
+        if( i<= n/2){                  //if we are in upper half
+            for( j =1; j<=n/2; j++ ){  //first we iterate on the upper left fourth
+                if( j < (n/2 - i+1)){ // if now we are not in allowed interval we should add space
                     x += " ";
                 }
                 else{
-                    x+= "/";
+                    x+= "/";          // if we are in allowed interval we should add slash
                 }
             }
-            for(j=j ; j<=n; j++){
+            for(j=j ; j<=n; j++){       //now we iterate on the upper right fourth
                 if( j <= (n/2 + i)){
                     x += "\\";
                 }
@@ -30,7 +30,7 @@ public class Diamond {
 
             }
         }
-        else{
+        else{                             //similarly for the down half
             i = n - i;
             for(j =1; j<=n/2; j++ ){
                 if( j < (n/2 - i)){
