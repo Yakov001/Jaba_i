@@ -1,5 +1,9 @@
 import java.util.Scanner;
-
+/*
+as you can see the number of / and \ depends on the number of string we want to print. For example, we want to print
+in the upper left quarter "/" if char's position is bigger or equal n/2 - i + 1 and less or equal n/2.
+Generalising this idea on other quarter we can solve this issue.
+ */
 public class Diamond {
     public static void main(String[] args){
         Scanner in = new Scanner(System.in);
